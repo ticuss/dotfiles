@@ -3,4 +3,3 @@
 -- Add any additional autocmds here
 
 vim.cmd([[autocmd BufWritePre * set eol]])
-vim.lsp.buf.format({ timeout_ms = 30000 })

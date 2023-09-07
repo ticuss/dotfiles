@@ -1,5 +1,4 @@
 return {
-  { "fatih/vim-go" }, -- Go
   {
     "jose-elias-alvarez/null-ls.nvim",
     opts = function(_, opts)
@@ -19,6 +18,7 @@ return {
           end
         }),
         nls.builtins.diagnostics.cspell.with({
+          method = nls.methods.DIAGNOSTICS_ON_SAVE,
           diagnostics_postprocess = function(diagnostic)
             diagnostic.severity = vim.diagnostic.severity.INFO
           end,
@@ -28,9 +28,6 @@ return {
           extra_args = { "--max-line-length=88", "--ignore=E402,F841,F401,E302,E305,W503" },
         }),
         timeout = 300000,
-        nls.builtins.formatting.golines,
-        nls.builtins.formatting.goimports,
-        nls.builtins.formatting.gofumpt,
       }
       return opts
     end,

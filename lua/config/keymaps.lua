@@ -8,7 +8,7 @@ vim.keymap.set("n", "<leader>chc", "<cmd>ChatGPT<cr>", { desc = "Chat with GPT-3
 vim.keymap.set("n", "<leader>che", "<cmd>ChatGPTEditWithInstructions<cr>", { desc = "GPT Edit With Instructions" })
 vim.keymap.set("v", "<leader>chrt", "<cmd>ChatGPTRun add_tests<cr>", { desc = "GPT add tests" })
 vim.keymap.set("v", "<leader>chra", "<cmd>ChatGPTRun code_readability_analysis<cr>",
-    { desc = "GPT Readability Analysis" })
+  { desc = "GPT Readability Analysis" })
 vim.keymap.set("v", "<leader>chrc", "<cmd>ChatGPTRun complete_code<cr>", { desc = "GPT Complete Code" })
 vim.keymap.set("v", "<leader>chrd", "<cmd>ChatGPTRun docstring<cr>", { desc = "GPT Docstring" })
 vim.keymap.set("v", "<leader>chre", "<cmd>ChatGPTRun explain_code<cr>", { desc = "GPT Explain Code" })

@@ -20,12 +20,15 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "plugins" },
   },
+  ui = {
+    border = "rounded",
+  },
 
   defaults = {
     lazy = false,
     version = false, -- always use the latest git commit
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = { colorscheme = { "tokyonight", "habamax", "gruvbox" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {

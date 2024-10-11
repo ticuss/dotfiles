@@ -1,19 +1,23 @@
 return {
-  {
-    "nvimtools/none-ls.nvim",
-    enabled = false,
-  },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        ruff_lsp = {
-          autostart = true,
+  "neovim/nvim-lspconfig",
+  opts = {
+    servers = {
+      marksman = {
+        diagnostics = {
+          disable = { "MD013" }, -- Disable line length check
         },
       },
     },
   },
 }
+
+-- return {
+--   {
+--     "nvimtools/none-ls.nvim",
+--     enabled = false,
+--   },
+-- }
+
 -- return {
 --   {
 --

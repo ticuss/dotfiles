@@ -14,10 +14,21 @@ return {
         load = {
           ["core.defaults"] = {}, -- Loads default behaviour
           ["core.concealer"] = {}, -- Adds pretty icons to your documents
+          ["core.export"] = {},
+          ["core.export.markdown"] = {
+            config = {
+              extensions = "all",
+            },
+          },
+          ["core.ui"] = {},
+          ["core.summary"] = {},
+          ["core.integrations.treesitter"] = {},
+          ["core.ui.calendar"] = {},
           ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
                 notes = "~/MyFiles/notes",
+                journal = "~/MyFiles/journal",
               },
             },
           },

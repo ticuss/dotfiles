@@ -26,7 +26,7 @@ return {
     },
 
     ui = {
-      enable = true,
+      enable = false,
       bullets = { char = "•", hl_group = "ObsidianBullet" },
       hl_group = {
         ObsidianBullet = { fg = "red", bold = false },

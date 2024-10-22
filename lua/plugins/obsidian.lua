@@ -20,11 +20,10 @@ return {
   opts = {
     workspaces = {
       {
-        name = "personal",
-        path = "~/MyFiles/Obsidian_vaults",
+        name = "test",
+        path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_vaults/My-Vault/",
       },
     },
-
     ui = {
       enable = false,
       bullets = { char = "•", hl_group = "ObsidianBullet" },
@@ -38,4 +37,11 @@ return {
       vim.fn.jobstart({ "open", "-a", "Firefox", "-g", url })
     end,
   },
+
+  ---@param img string
+  follow_img_func = function(img)
+    vim.fn.jobstart({ "qlmanage", "-p", img }) -- Mac OS quick look preview
+    -- vim.fn.jobstart({"xdg-open", url})  -- linux
+    -- vim.cmd(':silent exec "!start ' .. url .. '"') -- Windows
+  end,
 }

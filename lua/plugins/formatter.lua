@@ -3,10 +3,21 @@ return {
   event = { "BufWritePre" },
   cmd = { "ConformInfo" },
   opts = {
+    ensure_installed = {
+      "sqlfmt",
+      "stylua",
+      "black",
+      "prettier",
+      "isort",
+      "sqlfmt",
+      "sqlfluff",
+      "sqlfluff-templater-dbt",
+    },
     formatters_by_ft = {
       lua = { "stylua" },
       python = { "isort", "black" },
       javascript = { { "prettierd", "prettier" } },
+      sql = { "sqlfluff" },
     },
     formatters = {
       shfmt = {

@@ -1,1 +1,1 @@
-return { "lukas-reineke/headlines.nvim", enabled = false }
+return { "lukas-reineke/headlines.nvim", enabled = true }

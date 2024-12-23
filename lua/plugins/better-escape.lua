@@ -1,5 +1,4 @@
 return {
-
   event = "InsertEnter",
   "max397574/better-escape.nvim",
   config = function()
@@ -9,4 +8,5 @@ return {
     mapping = { "jj" },
     timeout = 200,
   },
+  enabled = false,
 }

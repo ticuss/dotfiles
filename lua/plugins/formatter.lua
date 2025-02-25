@@ -18,6 +18,7 @@ return {
       python = { "isort", "black" },
       javascript = { { "prettierd", "prettier" } },
       sql = { "sqlfluff" },
+      templ = { "templ" },
     },
     formatters = {
       shfmt = {
